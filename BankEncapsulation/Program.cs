@@ -21,6 +21,9 @@ namespace BankEncapsulation
                         Console.WriteLine("How much money would you like to deposit");
                         var amountDeposit = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine($"\nYou have ${juansAccount.Deposit(amountDeposit)} in your bank account");
+                        Console.WriteLine("Press Enter to continue.");
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     case "N":
                         Console.WriteLine($"Thank you for banking with us. You final balance is ${juansAccount.GetBalance()}.");
